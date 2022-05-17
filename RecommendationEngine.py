@@ -22,4 +22,3 @@ class RecommendationEngine:
                         "SET a.message = $message "
                         "RETURN a.message + ', from node ' + id(a)", message=message)
         return result.single()[0]
-
